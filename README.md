@@ -1,1 +1,1 @@
-## Project for Sentiment Analysis of Movie Reviews 
+## ProjectSA: Sentiment Analysis of Movie Reviews 

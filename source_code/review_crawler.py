@@ -11,7 +11,6 @@ def review_crawler():
         url = "https://movie.naver.com/movie/point/af/list.nhn?&page={}".format(i)
         response = requests.get(url)
         dom = BeautifulSoup(response.content, "html.parser")
-        dom.find_all("a", "movie")
         reviews_pre = dom.find_all("td", "title")
 
         for idx, rvw in enumerate(reviews_pre):

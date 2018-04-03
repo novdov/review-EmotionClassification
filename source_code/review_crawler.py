@@ -2,12 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+import datetime
+from tqdm import tqdm
+
 
 def review_crawler():
-
     nv_reviews = pd.DataFrame(columns=["title", "review"])
 
-    for i in range(1, 1000+1):
+    for i in tqdm(range(1, 1000 + 1)):
         url = "https://movie.naver.com/movie/point/af/list.nhn?&page={}".format(i)
         response = requests.get(url)
         dom = BeautifulSoup(response.content, "html.parser")
@@ -20,6 +22,12 @@ def review_crawler():
                 "title": title,
                 "review": review
             }
+        time.sleep(0.3)
 
-        time.sleep(0.5)
     return nv_reviews
+
+
+df = review_crawler()
+date = datetime.datetime.date(datetime.datetime.now())
+df.to_csv('../../MovieReview/movie_reviews_{}'.format(date),
+          index=False, encoding='utf-8')

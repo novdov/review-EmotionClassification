@@ -19,7 +19,7 @@ def review_crawler():
             title = rvw.a.text
             review = rvw.text.split('\n')[2].split(' \r')[0]
             nv_reviews.loc[len(nv_reviews)] = {
-                "title": title+"\t",
+                "title": title,
                 "review": review
             }
         time.sleep(0.3)

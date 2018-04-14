@@ -9,7 +9,7 @@ from tqdm import tqdm
 def review_crawler():
     nv_reviews = pd.DataFrame(columns=["title", "review"])
 
-    for i in tqdm(range(1, 500+1)):
+    for i in tqdm(range(1, 400+1)):
         url = "https://movie.naver.com/movie/point/af/list.nhn?&page={}".format(i)
         response = requests.get(url)
         dom = BeautifulSoup(response.content, "html.parser")

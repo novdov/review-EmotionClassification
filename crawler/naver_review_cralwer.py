@@ -29,7 +29,7 @@ def review_crawler():
             rating = point.text
             ratings_lst.append(rating)
 
-        time.sleep(0.3)
+        time.sleep(0.2)
 
     nv_reviews["rating"] = ratings_lst
 

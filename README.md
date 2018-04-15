@@ -1,1 +1,6 @@
-## ProjectSA: Sentiment Analysis of Movie Reviews 
+## Sentiment Analysis of Movie Reviews 
+
+#### Source
+
+- Naver
+- Watcha

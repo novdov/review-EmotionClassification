@@ -14,8 +14,8 @@ def make_movie_url(unique_id, start, count):
 
 def review_crawler():
     df_tmp = pd.read_csv("../data/watcha_codes_page.csv")
-    page_split = df_tmp["page_split"][:2]
-    codes = df_tmp["code"][:2]
+    page_split = df_tmp["page_split"]
+    codes = df_tmp["code"]
     zipped = zip(codes, page_split)
 
     df = pd.DataFrame(columns=["title", "review", "rating"])

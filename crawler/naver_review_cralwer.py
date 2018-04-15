@@ -8,12 +8,14 @@ from tqdm import tqdm
 
 def review_crawler():
     nv_reviews = pd.DataFrame(columns=["title", "review"])
+    ratings_lst = []
 
-    for i in tqdm(range(1, 400+1)):
+    for i in tqdm(range(1, 450+1)):
         url = "https://movie.naver.com/movie/point/af/list.nhn?&page={}".format(i)
         response = requests.get(url)
         dom = BeautifulSoup(response.content, "html.parser")
         reviews_pre = dom.find_all("td", "title")
+        ratings = dom.find_all("td", "point")
 
         for idx, rvw in enumerate(reviews_pre):
             title = rvw.a.text
@@ -22,7 +24,14 @@ def review_crawler():
                 "title": title,
                 "review": review
             }
+
+        for point in ratings:
+            rating = point.text
+            ratings_lst.append(rating)
+
         time.sleep(0.3)
+
+    nv_reviews["rating"] = ratings_lst
 
     return nv_reviews
 

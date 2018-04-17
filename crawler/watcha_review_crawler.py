@@ -40,8 +40,9 @@ def review_crawler():
 
     # number of contents to be shown for each iteration.
     count = 10
-    try:
-        for code, page in zipped:
+
+    for code, page in zipped:
+        try:
             for i in tqdm(range(page)):
                 url = make_movie_url(code, i, count)
                 response = requests.get(url)
@@ -61,8 +62,8 @@ def review_crawler():
                     }
                 time.sleep(0.2)
 
-    except:
-        pass
+        except:
+            pass
         # print("error occured")
 
     return df

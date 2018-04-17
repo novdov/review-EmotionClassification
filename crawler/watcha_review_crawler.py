@@ -63,6 +63,9 @@ def review_crawler():
                 time.sleep(0.2)
 
         except:
+            if KeyboardInterrupt:
+                break
+
             pass
         # print("error occured")
 

@@ -38,5 +38,5 @@ def review_crawler():
 
 df = review_crawler()
 date = datetime.datetime.date(datetime.datetime.now())
-df.to_csv('../../MovieReview/movie_reviews_{}'.format(date),
+df.to_csv("../../MovieReview/movie_reviews_{}.txt".format(date),
           index=False, encoding='utf-8')

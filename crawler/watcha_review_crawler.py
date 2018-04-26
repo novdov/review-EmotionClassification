@@ -64,6 +64,7 @@ def review_crawler():
 
         except:
             if KeyboardInterrupt:
+                print("Iteration ended at movie {}".format(code))
                 break
 
             pass

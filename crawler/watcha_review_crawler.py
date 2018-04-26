@@ -41,7 +41,7 @@ def review_crawler():
     # number of contents to be shown for each iteration.
     count = 10
 
-    for code, page in zipped:
+    for code, page in zipped[10:]:
         try:
             for i in tqdm(range(page)):
                 url = make_movie_url(code, i, count)

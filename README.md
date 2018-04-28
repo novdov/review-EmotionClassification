@@ -1,6 +1,34 @@
-## Sentiment Analysis of Movie Reviews 
+## Emotion Classification of Movie Reviews 
 
-#### Source
+## Contents
 
-- Naver
-- Watcha
+### 1. Project
+
+- **Data Sources**
+  - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (for corpus and train/test set)
+  - [Watcha](https://watcha.net/) (for corpus)
+
+### 2. Corpus Construction
+
+
+
+### 3. Modeling
+
+
+
+### 4. Results
+
+
+
+### 5. Lessons
+
+
+
+
+
+
+
+
+
+
+

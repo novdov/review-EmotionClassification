@@ -1,8 +1,8 @@
-## Emotion Classification of Movie Reviews 
+# Emotion Classification of Movie Reviews 
 
 ## Contents
 
-### 1. Project
+### 1. Overview
 
 - **Data Sources**
   - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (for corpus and train/test set)

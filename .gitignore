@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+
+.pickle
+model_word2vec/
+data_pickle/
+
 __pycache__/
 *.py[cod]
 *$py.class

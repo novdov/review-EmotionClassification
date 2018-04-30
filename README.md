@@ -15,7 +15,7 @@
   - Tokenizing/Pos tagging -  Twitter (KoNLPy)
   - Word Embedding (300 dimension)  - Word2Vec 
 
-<img src="https://i.imgur.com/qz88Xs8.jpg">
+<img src="https://i.imgur.com/sRYPYXz.jpg">
 
 ### 3. Modeling
 

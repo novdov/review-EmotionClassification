@@ -26,7 +26,7 @@ model.wv.most_similar('기쁘다/Noun', topn=100) ...
 
 ### 3. Modeling
 
-
+- Doc2Vec/Logistic Regression: 57% (accuracy)
 
 ### 4. Results
 

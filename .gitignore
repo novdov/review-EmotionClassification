@@ -1,7 +1,7 @@
 # Byte-compiled / optimized / DLL files
 
 .pickle
-word2vec_model/
+model/word2vec_model/*
 data_pickle/
 
 __pycache__/

@@ -6,11 +6,16 @@
 
 - **Data Sources**
   - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (for corpus and train/test set)
-  - [Watcha](https://watcha.net/) (for corpus)
 
 ### 2. Corpus Construction
 
+- Total 252,847 reviews from Naver movie rating
+- 5 labels (기쁘다, 화나다, 역겹다, 슬프다, 무섭다)
+- Corpus construction
+  - Tokenizing/Pos tagging -  Twitter (KoNLPy)
+  - Word Embedding (300 dimension)  - Word2Vec 
 
+<img src="https://i.imgur.com/qz88Xs8.jpg">
 
 ### 3. Modeling
 

@@ -13,14 +13,16 @@
 - 5 labels (기쁘다, 화나다, 역겹다, 슬프다, 무섭다)
 - Corpus construction
   - Tokenizing/Pos tagging -  Twitter (KoNLPy)
+
   - Word Embedding (300 dimension)  - Word2Vec
+
   - Get similar words from Word2Vec model → Make corpus for each label
 
-```python
-model.wv.most_similar('기쁘다/Noun', topn=100) ...
-```
+    ```python
+    model.wv.most_similar('기쁘다/Noun', topn=100) ...
+    ```
 
-
+  - Tagging label to reviews/Removing mislabeled and neutral items
 
 <img src="https://i.imgur.com/sRYPYXz.jpg">
 

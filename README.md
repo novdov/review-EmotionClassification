@@ -35,12 +35,12 @@
 
 - Result Summary
 
-|                                            | DatDate. | N. Data | Accuracy | Recall | F1-Score |
-| ------------------------------------------ | :------: | :-----: | :------: | :----: | :------: |
-| Doc2Vec/Logistic Regression                |  04/30   | 152,479 |   0.57   |        |          |
-| Tf-Idf/Multinomial NB (without tokenizing) |  04/30   | 152,479 |   0.64   |  0.65  |   0.63   |
-| Tf-Idf/Multinomial NB (with tokenizing)    |  04/30   | 152,479 |   0.70   |  0.69  |   0.67   |
-| Tf-Idf/Multinomial NB (with tokenizing)    |  05/02   | 149,752 |   0.70   |  0.69  |   0.67   |
+|                                            | D. Data | N. Data | Accuracy | Recall | F1-Score |
+| ------------------------------------------ | :-----: | :-----: | :------: | :----: | :------: |
+| Doc2Vec/Logistic Regression                |  04/30  | 152,479 |   0.57   |        |          |
+| Tf-Idf/Multinomial NB (without tokenizing) |  04/30  | 152,479 |   0.64   |  0.65  |   0.63   |
+| Tf-Idf/Multinomial NB (with tokenizing)    |  04/30  | 152,479 |   0.70   |  0.69  |   0.67   |
+| Tf-Idf/Multinomial NB (with tokenizing)    |  05/02  | 149,752 |   0.70   |  0.69  |   0.67   |
 
 - Tf-Idf/Multinomial NB
   - 05/01

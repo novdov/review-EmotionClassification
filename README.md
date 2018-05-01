@@ -28,11 +28,15 @@
 
 ### 3. Modeling
 
-- Doc2Vec/Logistic Regression: 57% (accuracy)
+- Doc2Vec/Logistic Regression
+- Tf-Idf/Multinomial Naive Bayes
 
 ### 4. Results
 
-
+|                                            | Accuracy | Recall |
+| ------------------------------------------ | -------- | ------ |
+| Doc2Vec/Logistic Regression                | 0.57     |        |
+| Tf-Idf/Multinomial NB (without tokenizing) | 0.64     | 0.65   |
 
 ### 5. Lessons
 

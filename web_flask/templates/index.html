@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Emotioin Classification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="shortcut icon" href="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2016/02/untitled_1_01_wfp_icon.ico"  /> -->
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+    <style media="screen">
+        .container {
+            margin-top: 40px;
+        }
+
+        .result {
+            margin-top: 20px;
+            display: none;
+        }
+
+        #container {
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="input row">
+            <input type="text" class="col-md-10 form-control sentence" placeholder="Enter Sentence!" value="너무 좋았어요. 처음부터 끝까지">
+            <button type="button" class="col-md-2 btn btn-success predict" name="button">Prediction</button>
+        </div>
+        <div class="result row">
+            <div class="col-md-12 alert alert-success" role="alert"></div>
+        </div>
+        <div class="chart row">
+            <div id="container"></div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $(".predict").on("click", function(){
+                var sentence = $(".sentence").val();
+                var request = {
+                    sentence:sentence
+                }
+                $('.result .alert').empty();
+                $.post("/predict/", request).done(function(data){
+                    var result_data = []
+                    for(var i=0; i<data.result.length; i++){
+                        var summary = data.category[i] + " : ";
+                            summary += (data.result[i]*100).toFixed(2) + "%";
+
+                        var tag = "<p>" + summary + "</p>";
+                        $('.result .alert').append(tag);
+
+                        result_data.push({
+                            name: data.category[i],
+                            y: Number((data.result[i]*100).toFixed(2))
+                        })
+
+                    }
+                    $('.result').slideDown();
+
+                    drawChart(result_data);
+
+
+                })
+                // alert(sentence);
+            });
+
+        });
+
+        function drawChart(result_data){
+            Highcharts.chart('container', {
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Article Category Classification Reuslt, 2018'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Percentage',
+                    colorByPoint: true,
+                    data: result_data
+                }]
+            });
+
+
+        }
+
+    </script>
+</body>
+
+</html>

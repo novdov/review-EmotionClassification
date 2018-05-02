@@ -58,7 +58,7 @@
     - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/무섭다/슬프다 slightly imporved. (0.67/0.35/0.30 → 0.69/0.37/0.33)
     - Misclassification problem did not fixed.
 
-  - 05/03
+  - 05/02
 
     - Failed to use word2vec embedding (`model.wv.get_keras_embedding`) - Vocabulary size of word2vec embedding (9829) does not match keras tokenizing (`tokenizer.fit_ont_texts`, 48495): Failed to handle
     - 1 epoch -  0.95, test loss increased

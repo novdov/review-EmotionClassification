@@ -57,6 +57,8 @@
   - 05/02
     - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/역겹다/무섭다/슬프다 imporved. (0.67/0.44/0.35/0.30 → 0.78/0.64/0.62/0.55)
 
+- CNN-LSTM
+
   - 05/02
 
     - Failed to use word2vec embedding. (`model.wv.get_keras_embedding`) - Vocabulary size of word2vec embedding (9829) does not match keras tokenizing. (`tokenizer.fit_ont_texts`, 48495): Failed to handle

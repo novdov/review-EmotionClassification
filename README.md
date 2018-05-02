@@ -45,7 +45,7 @@
 | Doc2Vec/Logistic Regression                |  04/30  | 152,479 |   0.57   |        |          |
 | Tf-Idf/Multinomial NB (without tokenizing) |  04/30  | 152,479 |   0.64   |  0.65  |   0.63   |
 | Tf-Idf/Multinomial NB (with tokenizing)    |  04/30  | 152,479 |   0.70   |  0.69  |   0.67   |
-| Tf-Idf/Multinomial NB (with tokenizing)    |  05/02  | 149,752 |   0.70   |  0.69  |   0.67   |
+| Tf-Idf/Multinomial NB (with tokenizing)    |  05/02  | 149,752 |   0.77   |  0.77  |   0.77   |
 | CNN-LSTM                                   |  05/02  | 149,752 |   0.93   |        |          |
 
 - Tf-Idf/Multinomial NB
@@ -55,8 +55,7 @@
     - Misclassifying other emotions as 기쁘다 (even more 기쁘다 at 무섭다/슬프다) - Main problem! 
 
   - 05/02
-    - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/무섭다/슬프다 slightly imporved. (0.67/0.35/0.30 → 0.69/0.37/0.33)
-    - Misclassification problem did not fixed.
+    - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/역겹다/무섭다/슬프다 imporved. (0.67/0.44/0.35/0.30 → 0.78/0.64/0.62/0.55)
 
   - 05/02
 

@@ -56,7 +56,7 @@
 
   - 05/02
     - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/무섭다/슬프다 slightly imporved. (0.67/0.35/0.30 → 0.69/0.37/0.33)
-    - Misclassification problem does not fixed.
+    - Misclassification problem did not fixed.
 
   - 05/03
 

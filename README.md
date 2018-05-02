@@ -60,8 +60,8 @@
 
   - 05/02
 
-    - Failed to use word2vec embedding (`model.wv.get_keras_embedding`) - Vocabulary size of word2vec embedding (9829) does not match keras tokenizing (`tokenizer.fit_ont_texts`, 48495): Failed to handle
-    - 1 epoch -  0.95, but test loss increased in follwing epochs
+    - Failed to use word2vec embedding. (`model.wv.get_keras_embedding`) - Vocabulary size of word2vec embedding (9829) does not match keras tokenizing. (`tokenizer.fit_ont_texts`, 48495): Failed to handle
+    - 1 epoch -  0.95, but test loss increased at follwing epochs.
 
     <img src="https://i.imgur.com/ow3SeFb.png">
 

@@ -4,6 +4,10 @@
 
 ### 1. Overview
 
+- Why emotion classification of movie reviews?
+  - Get many information from emotions of reviews rather than ratings
+  - Main concern: Check how good classification can be done
+
 - **Data Sources**
   - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (for corpus and train/test set)
 

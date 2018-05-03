@@ -8,6 +8,11 @@
     <!-- <link rel="shortcut icon" href="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2016/02/untitled_1_01_wfp_icon.ico"  /> -->
     <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
     <style media="screen">
+
+        body {
+            background: linear-gradient( to right, #2a2a2b, #3e3e40)
+        }
+
         .container {
             margin-top: 40px;
         }
@@ -17,8 +22,18 @@
             display: none;
         }
 
+        #button1 {
+            background-color: #f45b5b;
+            border-color: #f45b5b;
+        }
+
         #container {
             margin: 0 auto;
+        }
+
+        #success {
+            background-color: #ECECEC;
+            color: #212529;
         }
 
     </style>
@@ -30,10 +45,11 @@
 
         <div class="input row">
             <input type="text" class="col-md-10 form-control sentence" placeholder="Enter Sentence!" value="너무 좋았어요. 처음부터 끝까지">
-            <button type="button" class="col-md-2 btn btn-success predict" name="button">Prediction</button>
+            <button id="button1" type="button" class="col-md-2 btn btn-success predict" name="button">Prediction</button>
+
         </div>
         <div class="result row">
-            <div class="col-md-12 alert alert-success" role="alert"></div>
+            <div id="success" class="col-md-12 alert alert-success" role="alert"></div>
         </div>
         <div class="chart row">
             <div id="container"></div>
@@ -48,6 +64,7 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/js/themes/dark-unica.js"></script>
 
     <script type="text/javascript">
 
@@ -94,7 +111,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'Article Category Classification Reuslt, 2018'
+                    text: 'Movie Reivew Emotion classification'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -122,7 +139,11 @@
 
         }
 
+
+
     </script>
+
+
 </body>
 
 </html>

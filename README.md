@@ -44,18 +44,20 @@
 | ------------------------------------------ | :-----: | :-----: | :------: | :----: | :------: |
 | Doc2Vec/Logistic Regression                |  04/30  | 152,479 |   0.57   |        |          |
 | Tf-Idf/Multinomial NB (without tokenizing) |  04/30  | 152,479 |   0.64   |  0.65  |   0.63   |
-| Tf-Idf/Multinomial NB (with tokenizing)    |  04/30  | 152,479 |   0.70   |  0.69  |   0.67   |
-| Tf-Idf/Multinomial NB (with tokenizing)    |  05/02  | 149,752 |   0.77   |  0.77  |   0.77   |
 | CNN-LSTM                                   |  05/02  | 149,752 |   0.93   |        |          |
+| Tf-Idf/Multinomial NB                      |  05/03  | 148,861 |   0.77   |  0.77  |   0.77   |
+| Tf-Idf/Multinomial NB (oversampling)       |  05/03  | 148,861 |   0.86   |  0.86  |   0.86   |
 
 - Tf-Idf/Multinomial NB
   - 05/01
     - Row recall at 역겹다/슬프다/무섭다 - 0.44/0.35/0.30 (Accuracy: 0.75/0.73/0.77)
     - Accuracy and recall of 기쁘다/화나다 imporved after tokenizing. (0.68/0/85, 0.61/0.61 → 0.69/0.91, 0.61/0/67)
     - Misclassifying other emotions as 기쁘다 (even more 기쁘다 at 무섭다/슬프다) - Main problem! 
-
-  - 05/02
+  - 05/03
     - After removing mislabeled items (152,479 → 149,752 mainly in 기쁘다), recall of 화나다/역겹다/무섭다/슬프다 imporved. (0.67/0.44/0.35/0.30 → 0.78/0.64/0.62/0.55)
+  - 05/03
+    - Data filtered (mainly 기쁘다)
+    - Oversampling → precision/recall improved, especially 역겹다/슬프다/무섭다 (recall 0.65/0.62/0.56 → 0.89/0.87/0.94)
 
 - CNN-LSTM
 

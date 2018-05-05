@@ -2,9 +2,10 @@
 
 ### 1. Introduction
 
-- Why emotion classification?
+- **Objective**
   - Main concern: How to find movies fit me?
   - Get information of moives from context of reviews, not rating itself.
+  - Classify reviews as 5 emotions.
 - **Data Sources**
   - [Naver sentiment movie corpus v1.0](https://github.com/e9t/nsmc)
   - [Naver 영화 네티즌 평점](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)

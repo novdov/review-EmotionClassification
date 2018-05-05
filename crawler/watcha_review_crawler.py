@@ -68,7 +68,6 @@ def review_crawler():
                 break
 
             pass
-        # print("error occured")
 
     return df
 

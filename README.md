@@ -1,7 +1,5 @@
 # Emotion Classification of Movie Reviews 
 
-## Contents
-
 ### 1. Introduction
 
 - Why emotion classification?

@@ -24,7 +24,6 @@
   - Tokenizing/Pos tagging -  Twitter (KoNLPy)
   - Word Embedding (300 dimension)  - Word2Vec
   - Get similar words from Word2Vec model → Make corpus for each label
-
   - Tagging label to reviews using constructed corpus
   - Removing mislabeled and neutral items (manually)
   - Get 165,810 labeled reviews after preprocessing

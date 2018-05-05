@@ -2,20 +2,28 @@
 
 ## Contents
 
-### 1. Overview
+### 1. Introduction
 
-- Why emotion classification of movie reviews?
-  - Get many information from emotions of reviews rather than ratings
-  - Main concern: Check how good classification can be done
-
+- Why emotion classification?
+  - Main concern: How to find movies fit me?
+  - Get information of moives from context of reviews, not rating itself.
 - **Data Sources**
-  - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (for corpus and train/test set)
+  - [Naver sentiment movie corpus v1.0](https://github.com/e9t/nsmc)
+  - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)
+- **Tools**
+  - `KoNLPy`
+  - `gensim`
+  - `scikit-learn`
+  - `kears`
 
-### 2. Corpus Construction
+### 2. Preprocessing
 
-- Total 252,847 reviews from Naver movie rating
+- Total 252,847 reviews at initial point.
+
 - 5 labels (기쁘다, 화나다, 역겹다, 슬프다, 무섭다)
-- Corpus construction
+
+- Tagging labels
+
   - Tokenizing/Pos tagging -  Twitter (KoNLPy)
 
   - Word Embedding (300 dimension)  - Word2Vec
@@ -26,7 +34,11 @@
     model.wv.most_similar('기쁘다/Noun', topn=100) ...
     ```
 
-  - Tagging label to reviews/Removing mislabeled and neutral items
+  - Tagging label to reviews using constructed corpus
+
+  - Removing mislabeled and neutral items (manually)
+
+  - Get 165,810 labeled reviews after preprocessing
 
 <img src="https://i.imgur.com/sRYPYXz.jpg">
 

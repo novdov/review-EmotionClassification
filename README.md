@@ -7,7 +7,7 @@
   - Get information of moives from context of reviews, not rating itself.
 - **Data Sources**
   - [Naver sentiment movie corpus v1.0](https://github.com/e9t/nsmc)
-  - [Naver movie rating](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)
+  - [Naver 영화 네티즌 평점](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)
 - **Tools**
   - [`KoNLPy`](http://konlpy-ko.readthedocs.io/ko/v0.4.3/)
   - [`gensim`](https://radimrehurek.com/gensim/)

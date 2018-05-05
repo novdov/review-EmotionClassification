@@ -19,25 +19,14 @@
 ### 2. Preprocessing
 
 - Total 252,847 reviews at initial point.
-
 - 5 labels (기쁘다, 화나다, 역겹다, 슬프다, 무섭다)
-
 - Tagging labels
-
   - Tokenizing/Pos tagging -  Twitter (KoNLPy)
-
   - Word Embedding (300 dimension)  - Word2Vec
-
   - Get similar words from Word2Vec model → Make corpus for each label
 
-    ```python
-    model.wv.most_similar('기쁘다/Noun', topn=100) ...
-    ```
-
   - Tagging label to reviews using constructed corpus
-
   - Removing mislabeled and neutral items (manually)
-
   - Get 165,810 labeled reviews after preprocessing
 
 <img src="https://i.imgur.com/sRYPYXz.jpg">

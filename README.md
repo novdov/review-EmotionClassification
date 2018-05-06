@@ -47,8 +47,8 @@
 | ------------------------------------------ | :------: | :----: | :------: |
 | Doc2Vec/Logistic Regression                |   0.55   |  0.56  |   0.52   |
 | Tf-Idf/Multinomial NB (without tokenizing) |   0.64   |  0.65  |   0.63   |
-| Tf-Idf/Multinomial NB                      |   0.77   |  0.77  |   0.77   |
-| Tf-Idf/Multinomial NB (oversampling)       |   0.86   |  0.86  |   0.86   |
+| Tf-Idf/Multinomial NB                      |   0.77   |  0.78  |   0.77   |
+| Tf-Idf/Multinomial NB (oversampling)       |   0.85   |  0.86  |   0.85   |
 | CNN-LSTM                                   |   0.93   |        |          |
 
 - Tf-Idf/Multinomial NB

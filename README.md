@@ -43,13 +43,13 @@
 
 - Result Summary
 
-|                                            | D. Data | N. Data | Accuracy | Recall | F1-Score |
-| ------------------------------------------ | :-----: | :-----: | :------: | :----: | :------: |
-| Doc2Vec/Logistic Regression                |  04/30  | 152,479 |   0.57   |        |          |
-| Tf-Idf/Multinomial NB (without tokenizing) |  04/30  | 152,479 |   0.64   |  0.65  |   0.63   |
-| CNN-LSTM                                   |  05/02  | 149,752 |   0.93   |        |          |
-| Tf-Idf/Multinomial NB                      |  05/03  | 148,861 |   0.77   |  0.77  |   0.77   |
-| Tf-Idf/Multinomial NB (oversampling)       |  05/03  | 148,861 |   0.86   |  0.86  |   0.86   |
+|                                            | Accuracy | Recall | F1-Score |
+| ------------------------------------------ | :------: | :----: | :------: |
+| Doc2Vec/Logistic Regression                |   0.55   |  0.56  |   0.52   |
+| Tf-Idf/Multinomial NB (without tokenizing) |   0.64   |  0.65  |   0.63   |
+| Tf-Idf/Multinomial NB                      |   0.77   |  0.77  |   0.77   |
+| Tf-Idf/Multinomial NB (oversampling)       |   0.86   |  0.86  |   0.86   |
+| CNN-LSTM                                   |   0.93   |        |          |
 
 - Tf-Idf/Multinomial NB
   - 05/01

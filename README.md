@@ -63,7 +63,7 @@
 
 - Flask / Bootstrap
 
-<img src="https://i.imgur.com/df8YErl.png" style="width: 700px;"/>
+![web-app](https://i.imgur.com/df8YErl.png){width="500px"}
 
 
 

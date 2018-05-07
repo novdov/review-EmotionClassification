@@ -62,7 +62,7 @@
 
 <p align="center">
 
-<img src="https://i.imgur.com/hwdAysw.png" width="600">
+<img src="https://i.imgur.com/hwdAysw.png" width="700">
 
 </p>
 

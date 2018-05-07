@@ -37,7 +37,7 @@
 - Tf-Idf/Multinomial Naive Bayes (with/without tokenizing, oversampling)
 - CNN-LSTM
   - Conv1D - Pooling - LSTM
-  - epochs: 10, batch size: 150
+  - epochs: 10, batch size: 200
   - activation function: relu
 
 ### 4. Results
@@ -58,8 +58,13 @@
     - 0.67/0.44/0.35/0.30 → 0.78/0.64/0.62/0.55
   - Oversampling → precision/recall improved, especially 역겹다/슬프다/무섭다
     - Recall 0.66/0.61/0.57 → 0.89/0.87/0.95
-
 - CNN-LSTM
+
+<p align="center">
+
+<img src="https://i.imgur.com/hwdAysw.png" width="600">
+
+</p>
 
 
 

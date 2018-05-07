@@ -10,10 +10,12 @@
   - [Naver sentiment movie corpus v1.0](https://github.com/e9t/nsmc)
   - [Naver 영화 네티즌 평점](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)
 - **Tools**
-  - [`KoNLPy`](http://konlpy-ko.readthedocs.io/ko/v0.4.3/)
-  - [`gensim`](https://radimrehurek.com/gensim/)
-  - [`scikit-learn`](http://scikit-learn.org/stable/)
-  - [`keras`](https://keras.io/)
+  - [KoNLPy](http://konlpy-ko.readthedocs.io/ko/v0.4.3/)
+  - [gensim](https://radimrehurek.com/gensim/)
+  - [scikit-learn](http://scikit-learn.org/stable/)
+  - [keras](https://keras.io/)
+  - [Flask](http://flask.pocoo.org/)
+  - [Bootstrap](https://getbootstrap.com/)
 
 ### 2. Preprocessing
 

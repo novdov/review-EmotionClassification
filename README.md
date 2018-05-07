@@ -80,5 +80,11 @@
 
 ### 6. Limitations
 
-- Failed to use word2vec embedding due to lack of data for word embeddings. Did not consider data for embedding at first.
+- Failed to use word2vec embedding due to lack of data for word embeddings; Did not consider large data for embedding at first.
+  - Used words are limited to movie related expressions.
+- More tags are needed. (예) 당황스럽다, 놀라다, 미안하다 등)
+  - There are sentences which are hard to be classified as 5 labels including neutral state.
+- Low tokenizing/POS tagging performance (More sopisticated preprocessing is required.)
+  - Vulnerable to mis-spell, typing errors, and spacing. (Improper to web texts)
+  - Alternatives: [soynlp](https://github.com/lovit/soynlp), [soyspacing](https://github.com/lovit/soyspacing)… (at preprocessing stage)
 

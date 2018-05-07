@@ -54,8 +54,10 @@
 
 - Tf-Idf/Multinomial NB
   - Row recall at 역겹다/슬프다/무섭다 - 0.44/0.35/0.30 (Accuracy: 0.75/0.73/0.77)
-  - Accuracy and recall of 기쁘다/화나다 imporved after tokenizing. (0.68/0/85, 0.61/0.61 → 0.69/0.91, 0.61/0/67)
-  - Oversampling → precision/recall improved, especially 역겹다/슬프다/무섭다 (recall 0.65/0.62/0.56 → 0.89/0.87/0.94)
+  - Recall of 화나다/역겹다/슬프다/무섭다 imporved after tokenizing. 
+    - 0.67/0.44/0.35/0.30 → 0.78/0.64/0.62/0.55
+  - Oversampling → precision/recall improved, especially 역겹다/슬프다/무섭다
+    - recall 0.66/0.61/0.57 → 0.89/0.87/0.95
 
 - CNN-LSTM
 

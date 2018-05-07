@@ -27,7 +27,7 @@
   - Removing mislabeled and neutral items (manually)
   - 165,810 labeled reviews after preprocessing
 
-<img src="https://i.imgur.com/sRYPYXz.jpg">
+<img src="https://i.imgur.com/sRYPYXz.jpg" style="width: 600px;"/>
 
 ### 3. Modeling
 
@@ -58,7 +58,16 @@
 - CNN-LSTM
 
 
-### 5. Limitations
+
+### 5. Web Application
+
+- Flask / Bootstrap
+
+<img src="https://i.imgur.com/df8YErl.png" style="width: 700px;"/>
+
+
+
+### 6. Limitations
 
 - Failed to use word2vec embedding due to lack of data for word embeddings. Did not consider data for embedding at first.
 

@@ -27,7 +27,7 @@
   - Removing mislabeled and neutral items (manually)
   - 165,810 labeled reviews after preprocessing
 
-<img src="https://i.imgur.com/sRYPYXz.jpg" style="width: 600px;"/>
+<img src="https://i.imgur.com/sRYPYXz.jpg" width="700">
 
 ### 3. Modeling
 
@@ -63,7 +63,7 @@
 
 - Flask / Bootstrap
 
-![web-app](https://i.imgur.com/df8YErl.png){width="500px"}
+<img src="https://i.imgur.com/df8YErl.png" width="600">
 
 
 

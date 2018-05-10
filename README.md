@@ -64,12 +64,6 @@
   - Overfitted
 - Best performance: MNB (without tokenizing) towards outside data.
 
-<p align="center">
-
-<img src="https://i.imgur.com/hwdAysw.png" width="700">
-
-</p>
-
 
 
 ### 5. Web Application

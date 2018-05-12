@@ -30,7 +30,7 @@
   - 165,810 labeled reviews after preprocessing
 
 <p align="center">
-  <img src="https://i.imgur.com/sRYPYXz.jpg" width="700">
+  <img src="https://github.com/novdov/review-EmotionClassification/blob/master/img/emotion-clf.001.png?raw=true" width="700">
 </p>
 
 ### 3. Modeling

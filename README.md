@@ -72,7 +72,7 @@
 - Flask / Bootstrap
 
 <p align="center">
-  <img src="https://i.imgur.com/1YgjESJ.png" width="700">
+  <img src="https://i.imgur.com/1YgjESJ.png">
 </p>
 
 ### 6. Limitations

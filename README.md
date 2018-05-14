@@ -85,3 +85,11 @@
   - Vulnerable to mis-spell, typing errors, and spacing. (Improper to web texts)
   - Alternatives: [soynlp](https://github.com/lovit/soynlp), [soyspacing](https://github.com/lovit/soyspacing)… (at preprocessing stage)
 
+
+
+### 7. Follow-Up
+
+- Using `soynlp`, `soyspacing`
+  - Low performance than original model (tried: `soynlp`/`soyspacing`→`twitter`)
+  - Spacing correction need more train data, I think. (used data: [sample data of `soyspacing`](https://raw.githubusercontent.com/lovit/soyspacing/master/demo_model/134963_norm.txt))
+  - Spacing correction did not work well when using news texts.

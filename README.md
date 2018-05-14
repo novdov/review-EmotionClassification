@@ -1,4 +1,4 @@
-# Emotion Classification of Movie Reviews 
+# Emotion Classification in Movie Reviews 
 
 ### 1. Introduction
 

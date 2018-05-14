@@ -16,6 +16,8 @@
   - [keras](https://keras.io/)
   - [Flask](http://flask.pocoo.org/)
   - [Bootstrap](https://getbootstrap.com/)
+  - [soynlp](https://github.com/lovit/soynlp)
+  - [soyspacing](https://github.com/lovit/soyspacing)
 
 ### 2. Preprocessing
 

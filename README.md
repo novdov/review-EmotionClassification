@@ -104,7 +104,7 @@
 ### 9. How to improve?
 
 - Well-prepared data
-  - Design labels to capture most of emotions
+  - Well-defined labels to capture most of emotions
 - Proper preprocessing for short web texts
   - Spacing correction
   - Better tokenizing (not KoNLPy) e.g.) cohesion probablity

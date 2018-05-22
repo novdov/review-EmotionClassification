@@ -87,11 +87,26 @@
   - Vulnerable to mis-spell, typing errors, and spacing. (Improper to web texts)
   - Alternatives: [soynlp](https://github.com/lovit/soynlp), [soyspacing](https://github.com/lovit/soyspacing)… (at preprocessing stage)
 
-
-
 ### 7. Follow-Up
 
 - Using `soynlp`, `soyspacing`
   - Low performance than original model (tried: `soynlp`/`soyspacing`→`twitter`)
   - Spacing correction need more train data, I think. (used data: [sample data of `soyspacing`](https://raw.githubusercontent.com/lovit/soyspacing/master/demo_model/134963_norm.txt))
   - Spacing correction did not work well when using news texts.
+  
+### 8. Lessons
+
+- Obviously, data is important. (Proper reflection of real data outside model.)
+- Preprocessing is very important. (Especially in Korean texts.)
+- Define problems well.
+  - In this project, 5 labels were too simple to capture other emotions like disappointment, embarrassment, surprise and other subtle emotions.
+
+### 9. How to improve?
+
+- Well-prepared data
+  - Design labels to capture most of emotions
+- Proper preprocessing for short web texts
+  - Spacing correction
+  - Better tokenizing (not KoNLPy) e.g.) cohesion probablity
+- Other embeddings
+  - Fasttext based on consonant-vowel unit

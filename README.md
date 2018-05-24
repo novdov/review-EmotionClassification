@@ -77,30 +77,21 @@
 <img src="https://i.imgur.com/RNLGrN6.png" width="500">
 
 - Most of wrong predictions are classified as joy.
-
 - Below table contains reivews classified as joy which are selected every 10 turn in first 100 predictions.
+- Small samples, but noisy data cause wrong predictions
 
-- | Reason        | 'sadness' reviews classified as joy                          |
-  | ------------- | ------------------------------------------------------------ |
-  | Noise         | 오랜만에 맘에 드는 애니네요 제발 업 좀 빨리 해주세요 ㅜㅜ    |
-  | Multi-Emo     | 김지영감독님 수고 많으셨습니다.마지막 로이킴 봄봄봄 노래가 이렇게 슬픈줄..잘 보았습니다. 꼭 보세요 강추 |
-  | Noise         | 마미를 보고 봐서 조금 아쉬웠지만 데뷔작이라고 하기엔 정말 좋았다. 자비에돌란의 감성은 놀랍다. |
-  | Noise         | 극장에서 보이 못한게 아쉽네요. 좋은영화입니다.               |
-  | Noise         | 아..다시보고싶네요ㅜㅜ리메이크안되나요?제인생최고의드라마!그대와함께! |
-  | Fale Negative | ㅠㅠ 진실은 밝혀져야합니다                                   |
-  | Noise         | 마음을 찡하게 하는 장군이와 천둥이와의 아름다운 우정이...임수정씨의 열연과 함께 감동적인 작품입니다~인간성이 상실되어 가는 지금 마음 따뜻해지게 하는 그런 작품인 것 같네요^^ |
-  | Noise         | 드라마를 이렇게까지 집중해서 본건 처음인것 같습니다 연출력도 연출력이지만 배우들 연기와 스토리가 너무 좋았습니다ㅠㅠ 본방으로 못본게 너무 아쉬울정도! |
-  | Noise         | 개봉하자마자 본 보람이 있네여ㅠㅠㅠ 꾸르잼!                  |
-  | Noise         | 으웩우우에에에에ㅜ우우웅                                     |
-
-  Small samples, but noisy data cause wrong predictions
-
-
-
-
-
-
-
+| Reason        | 'sadness' reviews classified as joy                          |
+| ------------- | ------------------------------------------------------------ |
+| Noise         | 오랜만에 맘에 드는 애니네요 제발 업 좀 빨리 해주세요 ㅜㅜ    |
+| Multi-Emo     | 김지영감독님 수고 많으셨습니다.마지막 로이킴 봄봄봄 노래가 이렇게 슬픈줄..잘 보았습니다. 꼭 보세요 강추 |
+| Noise         | 마미를 보고 봐서 조금 아쉬웠지만 데뷔작이라고 하기엔 정말 좋았다. 자비에돌란의 감성은 놀랍다. |
+| Noise         | 극장에서 보이 못한게 아쉽네요. 좋은영화입니다.               |
+| Noise         | 아..다시보고싶네요ㅜㅜ리메이크안되나요?제인생최고의드라마!그대와함께! |
+| Fale Negative | ㅠㅠ 진실은 밝혀져야합니다                                   |
+| Noise         | 마음을 찡하게 하는 장군이와 천둥이와의 아름다운 우정이...임수정씨의 열연과 함께 감동적인 작품입니다~인간성이 상실되어 가는 지금 마음 따뜻해지게 하는 그런 작품인 것 같네요^^ |
+| Noise         | 드라마를 이렇게까지 집중해서 본건 처음인것 같습니다 연출력도 연출력이지만 배우들 연기와 스토리가 너무 좋았습니다ㅠㅠ 본방으로 못본게 너무 아쉬울정도! |
+| Noise         | 개봉하자마자 본 보람이 있네여ㅠㅠㅠ 꾸르잼!                  |
+| Noise         | 으웩우우에에에에ㅜ우우웅                                     |
 
 
 ## 5. Web Application

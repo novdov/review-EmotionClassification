@@ -74,7 +74,7 @@
 
 - Image of normalized confusion matrix
 
-<img src="https://i.imgur.com/RNLGrN6.png" width="500">
+<img src="https://i.imgur.com/RNLGrN6.png" width="350">
 
 - Most of wrong predictions are classified as joy.
 - Below table contains reivews classified as joy which are selected every 10 turn in first 100 predictions.

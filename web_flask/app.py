@@ -26,7 +26,7 @@ def index():
 def predict():
 
     # classification_list = ["정치", "경제", "사회", "생활/문화", "세계", "IT/과학"]
-    classification_list = ["기쁘다", "화나다", "역겹다", "무섭다", "슬프다"]
+    classification_list = ["기쁘다", "화나다", "역겹다", "슬프다", "무섭다"]
     model = models["classification"]
 
     if request.method == 'POST':
@@ -45,3 +45,6 @@ def predict():
         }
 
     return jsonify(result)
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0')

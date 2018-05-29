@@ -104,7 +104,7 @@
 - **Because of stemming, when eomi(어미) changes, model doesn't predict emotion.**
   - Left: '슬프다', Right: '슬퍼요'
 
-<img src="https://i.imgur.com/ZdflZIg.png" width="350"> <img src="https://i.imgur.com/8vG0FNL.png" width="350">
+<img src="https://i.imgur.com/ZdflZIg.png" width="400"> <img src="https://i.imgur.com/8vG0FNL.png" width="400">
 
 - Failed to use word2vec embedding due to lack of data for word embeddings; Did not consider large data for embedding at first.
   - Used words are limited to movie related expressions.
@@ -119,7 +119,7 @@
 ## 7. Follow-Up
 
 - Using `soynlp`, `soyspacing`
-  - Low performance than original model (tried: `soynlp`/`soyspacing`→`twitter`)
+  - Low performance than original model (tried: `soynlp`/`soyspacing`)
   - Spacing correction need more train data, I think. (used data: [sample data of `soyspacing`](https://raw.githubusercontent.com/lovit/soyspacing/master/demo_model/134963_norm.txt))
   - Spacing correction did not work well when using news texts.
   

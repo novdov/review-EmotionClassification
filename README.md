@@ -101,6 +101,11 @@
 
 ## 6. Limitations
 
+- **Because of stemming, when eomi(어미) changes, model doesn't predict emotion.**
+  - Left: '슬프다', Right: '슬퍼요'
+
+<img src="https://i.imgur.com/ZdflZIg.png" width="350"> <img src="https://i.imgur.com/8vG0FNL.png" width="350">
+
 - Failed to use word2vec embedding due to lack of data for word embeddings; Did not consider large data for embedding at first.
   - Used words are limited to movie related expressions.
 - More tags are needed. (예) 당황스럽다, 놀라다, 미안하다 등)
@@ -129,8 +134,9 @@
 
 - Well-prepared data
   - Well-defined labels to capture most of emotions
-- Proper preprocessing for short web texts
+- Better preprocessing
   - Spacing correction
-  - Better tokenizing (not KoNLPy) e.g.) cohesion probablity
+  - Better tokenizing (e.g.) cohesion probablity, etc.)
+    - Not stemming
 - Other embeddings
   - Fasttext based on consonant-vowel unit

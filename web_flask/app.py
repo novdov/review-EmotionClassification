@@ -10,7 +10,7 @@ models = {}
 
 
 def init():
-    with open("./models/mnb.pickle", "rb") as f:
+    with open("./models/mnb_os.pkl", "rb") as f:
         models["classification"] = pickle.load(f)
 
 

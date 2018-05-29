@@ -48,22 +48,20 @@
 
 ## 4. Results
 
-- Metrics of each model
+- Metrics of each model (test data)
 
 |                                      | Precision | Recall | F1-Score |
 | ------------------------------------ | :-------: | :----: | :------: |
-| Tf-Idf/Multinomial NB                |   0.64    |  0.65  |   0.63   |
-| Tf-Idf/Multinomial NB (tokenizing)   |   0.77    |  0.78  |   0.77   |
-| Tf-Idf/Multinomial NB (oversampling) |   0.85    |  0.86  |   0.85   |
+| Tf-Idf/Multinomial NB (tokenizing)   |   0.77    |  0.77  |   0.77   |
+| Tf-Idf/Multinomial NB (oversampling) |   0.74    |  0.73  |   0.73   |
 
 - Tf-Idf/Multinomial NB
-  - Row recall at 역겹다/슬프다/무섭다 - 0.44/0.35/0.30 (Precision 0.75/0.73/0.77)
-  - Recall of 화나다/역겹다/슬프다/무섭다 imporved after tokenizing. 
-    - 0.67/0.44/0.35/0.30 → 0.78/0.66/0.61/0.57
-  - Oversampling → precision/recall improved, especially 역겹다/슬프다/무섭다
-    - Recall 0.66/0.61/0.57 → 0.89/0.87/0.95
-- CNN-LSTM
-  - Overfitted (validation/test recall 0.93/0.37, )
+  - Recall of 역겹다/슬프다/무섭다 are is lower than recall of 기쁘다/화나다
+    - 역겹다/슬프다/무섭다: 0.64/0.60/0.59
+    - 기쁘다/화나다: 0.88/0.78
+  - After oversampling, recall of 역겹다/슬프다/무섭다 improved and recall of 기쁘다/화나다 decreased.
+    - 역겹다/슬프다/무섭다: 0.64/0.60/0.59 → 0.68/0.67/0.66
+    - 기쁘다/화나다: 0.88/0.78 → 0.77/0.73
 - Best performance: MNB (without tokenizing) towards real data.
 
 
@@ -81,7 +79,7 @@
 | Reason  | 'Sad' reviews classified as joy |
 |:---|:---|
 | FN | 가만있다 정말 이유 없이 불현듯 떠오른 '가을동화'. 보고싶어졌습니다. 전편을 이틀만에 봤습니다. 크헉크헉 울면서... 다시 봐도 명작입니다. 영상미, 배경들 미치도록 아름답네요. 두고두고 가슴에 남을 거예요. 아... 아리고 아린 드라마. 가을동화 |
-| Noise [Joy]  | 임권택감독의 삶에대한 관조가 고스란히 묻어있는 역작임. 정말 많은 생각을 하게 해주는영화 |
+| Noise [Joy] | 임권택감독의 삶에대한 관조가 고스란히 묻어있는 역작임. 정말 많은 생각을 하게 해주는영화 |
 | Noise [Multi] | 보다말았어요 ㅠ 너무 지루했어요 ㅠ근데 배경은 이뻤어요.. |
 | Noise [Joy] | 마음 울리는 영화연기 내용 비주얼 하나 빠짐없이 완벽함 |
 | Noise [Joy] | 아무 생각없이 봤는데 기대 이상, 강한 여운이 남는다 |

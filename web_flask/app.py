@@ -24,8 +24,6 @@ def index():
 
 @app.route("/predict/", methods=["POST"])
 def predict():
-
-    # classification_list = ["정치", "경제", "사회", "생활/문화", "세계", "IT/과학"]
     classification_list = ["기쁘다", "화나다", "역겹다", "슬프다", "무섭다"]
     model = models["classification"]
 

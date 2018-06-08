@@ -11,7 +11,7 @@
   - [Naver 영화 네티즌 평점](https://movie.naver.com/movie/point/af/list.nhn) (from crawling)
 - **Tools**
   - [KoNLPy](http://konlpy-ko.readthedocs.io/ko/v0.4.3/)
-  - [(gensim)Word2Vec/Doc2Vec](https://radimrehurek.com/gensim/)
+  - [gensim(Word2Vec/Doc2Vec)](https://radimrehurek.com/gensim/)
   - [scikit-learn](http://scikit-learn.org/stable/)
   - [Flask](http://flask.pocoo.org/)
   - [Bootstrap](https://getbootstrap.com/)

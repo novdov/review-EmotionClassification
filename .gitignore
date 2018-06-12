@@ -3,6 +3,7 @@
 .pickle
 model/word2vec_model/*
 data_pickle/
+Reviews/
 
 __pycache__/
 *.py[cod]

@@ -2,8 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-
+# TODO: staticmethod 제거
 class GetDaumNews:
+
+    def __init__(self):
+        pass
 
     @staticmethod
     def get_url(page, date):

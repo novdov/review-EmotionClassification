@@ -1,10 +1,15 @@
-import requests
-from bs4 import BeautifulSoup
+import os
 import pandas as pd
+import requests
 import time
-import datetime
+from datetime import datetime as dt
+from bs4 import BeautifulSoup
 from tqdm import tqdm
 
+date = dt.date(dt.now())
+
+PATH = '../review'
+FILE_NAME = 'movie_reviews_{}.txt'.format(date)
 
 def review_crawler():
     nv_reviews = pd.DataFrame(columns=["title", "review"])
@@ -37,6 +42,5 @@ def review_crawler():
 
 
 df = review_crawler()
-date = datetime.datetime.date(datetime.datetime.now())
-df.to_csv("../../MovieReview/reviews/movie_reviews_{}.txt".format(date),
+df.to_csv(os.path.join(PATH, FILE_NAME),
           index=False, encoding='utf-8')

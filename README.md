@@ -75,7 +75,7 @@
 - Below table contains reivews classified as joy which are selected every 10 turn in first 100 predictions.
 - Small samples, but noisy data cause wrong predictions
 
-| Reason  | 'Sad' reviews classified as joy |
+| Reason  | 'Sad' reviews classified as joy (FP) |
 |:---|:---|
 | Noise [Joy] | 이 시대에 사람의 마음을 한편의 그림으로 표현하는게 정말 아름다웠고 대단했다. |
 | Noise | 이모 죽을때 5초도 안슬퍼하네 |

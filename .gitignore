@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 
+src_org/
 .pickle
 model/word2vec_model/*
 data_pickle/
